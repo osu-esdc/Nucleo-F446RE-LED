@@ -28,7 +28,11 @@ client:
 	arm-none-eabi-gdb
 
 flash:
-	openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "program final.elf verify reset exit"
+	# USE THIS ONE FOR OPENOCD 0.12.0-1!!!
+	# openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "program final.elf verify reset exit"
+
+	# USE THIS ONE FOR OPENOCD 0.12.0-6!!!
+	openocd -f interface/stlink.cfg -c "transport select dapdirect_swd" -f target/stm32f4x.cfg -c "program final.elf verify reset exit"
 
 # -Wall: show all warnings
 #  clean: function description deletes all .o and .elf files
