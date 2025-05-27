@@ -4,7 +4,7 @@ The following describes the entire build process:
 
 ### Clone the repository 
 ```
-git clone git@github.com:OSU-ESDC/Nucleo-F446RE-LED.git
+git clone git@github.com:osu-esdc/Nucleo-F446RE-LED.git
 cd Nucleo-F446RE-LED
 make
 make flash
