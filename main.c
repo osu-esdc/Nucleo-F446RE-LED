@@ -48,7 +48,7 @@ int main(void) {
 		
 		if (val == 100000) {
 
-			GPIOA_ODR ^= (1 << 5); // set led ON
+		//	GPIOA_ODR ^= (1 << 5); // set led ON
 			val = 0;
 		}
 
