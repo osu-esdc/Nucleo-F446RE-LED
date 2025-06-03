@@ -3,7 +3,7 @@
 AS=arm-none-eabi-as
 CC=arm-none-eabi-gcc
 MACH=cortex-m4
-AFLAGS=-c -mcpu=$(MACH) -mthumb -Wall -o0
+AFLAGS=-c -mcpu=$(MACH) -mthumb
 CFLAGS=-c -mcpu=$(MACH) -mthumb --std=gnu11 -Wall -Wextra -Wpedantic -o0 -g3
 LDFLAGS=-nostdlib -T stm32_ls.ld -Wl,-Map=final.map #-Wl specifies a linker input
 
